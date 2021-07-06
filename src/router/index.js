@@ -1,12 +1,18 @@
-import { createApp } from "vue";
-import Router from "vue-router";
+// import { createRouter } from 'vue-router'
 
-createApp.use(Router);
+// const routes = [];
 
-const routes = [];
+// const router = createRouter({
+//   routes,
+// });
 
-const router = new Router({
-  routes,
-});
+// export default router;
+
+import { createRouter, createWebHashHistory } from 'vue-router';
+
+const router = createRouter({
+  history: createWebHashHistory(), // hash模式：createWebHashHistory，history模式：createWebHistory
+  routes: [],
+})
 
 export default router;

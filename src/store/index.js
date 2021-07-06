@@ -1,16 +1,8 @@
-import { createApp } from "vue";
-import Vuex from "vuex";
+import { createStore } from 'vuex';
 
-createApp.use(Vuex);
-
-const store = new Vuex.Store({
+const store = createStore({
   state: {
     count: 0,
-  },
-  mutations: {
-    increment(state) {
-      state.count++;
-    },
   },
 });
 
